@@ -10,6 +10,20 @@ body {
 img {
   max-width: 100%;
 }
+.header-with-background {
+  background-image: url('mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.header-with-background h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px black;
+  padding: 40vh 15vw 0;
+}
 .forma-123 label {
   color: #105e62;
 }
@@ -127,13 +141,6 @@ h2 {
   margin-left: 75px;
   font-family: Georgia;
 }
-div {
-  background-color: whitesmoke;
-  width: 290px;
-  border: 5px solid pink;
-  padding: 23px;
-  margin-left: 1100px;
-}
 .imgHotel {
   margin-left: 1100px;
   width: 20%;
@@ -141,4 +148,36 @@ div {
 }
 .fact {
   margin-left: 1100px;
+}
+.grid-system {
+  display: grid;
+  grid-template-columns: 4fr 6fr 4fr;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+}
+.grid-system .item {
+  background: #050;
+  padding: 16px;
+}
+.grid-system .item:first-child {
+  background: #500;
+}
+.grid-system .item:last-child {
+  background: #005;
+}
+.grid-system .item img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+.grid-system .item p {
+  color: white;
+  text-shadow: 0 0 5px black;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .grid-system {
+    grid-template-columns: 1fr;
+  }
 }
