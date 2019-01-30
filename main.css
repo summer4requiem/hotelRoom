@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #a2eae2;
+}
+img {
+  max-width: 100%;
+}
+.forma-123 label {
+  color: #105e62;
+}
+.forma-123 label .title {
+  display: block;
+  margin-left: 15px;
+}
+.forma-123 input {
+  margin-left: 15px;
+  border-radius: 12px;
+}
+.forma-123 button {
+  display: inline-block;
+  padding: 4px;
+  background: #a2eae2;
+  color: #b5525c;
+  border: 2px solid #41aaa8;
+  border-radius: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.forma-123 button:hover {
+  background: #41aaa8;
+}
+.btn {
+  display: inline-block;
+  padding: 4px;
+  background: #a2eae2;
+  color: #b5525c;
+  border: 2px solid #41aaa8;
+  border-radius: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #41aaa8;
+}
+nav ul,
+nav li,
+nav b,
+nav a {
+  color: #b5525c;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #b5525c;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8ph;
+}
+.header1 {
+  background-color: #b5525c;
+  text-align: left;
+  font-size: 25px;
+}
+.header1,
+h2 {
+  color: #105e62;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #a2eae2;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-color: #105e62;
+  color: #a2eae2;
+  height: 300px;
+}
+footer {
+  background-color: #b5525c;
+  padding: 1px;
+  text-align: center;
+  color: #a2eae2;
+}
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+.border {
+  font-family: Georgia;
+  color: #b5525c;
+  margin: 25px 50px 75px 100px;
+}
+.mainLink {
+  color: white;
+}
+h2 {
+  margin-left: 75px;
+  font-family: Georgia;
+}
+div {
+  background-color: whitesmoke;
+  width: 290px;
+  border: 5px solid pink;
+  padding: 23px;
+  margin-left: 1100px;
+}
+.imgHotel {
+  margin-left: 1100px;
+  width: 20%;
+  border: 5px solid pink;
+}
+.fact {
+  margin-left: 1100px;
+}

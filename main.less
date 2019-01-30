@@ -1,0 +1,164 @@
+@color-turquoise: #105e62;
+@color-lightturquoise: #a2eae2;
+@color-mediumturquise: #41aaa8;
+@color-terracotta: #b5525c;
+@main-font: Georgia;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+    background: @color-lightturquoise;
+}
+
+img {
+    max-width: 100%;
+}
+.forma-123 {
+    label {
+        color: @color-turquoise;
+        .title {
+            display: block;
+            margin-left: 15px;
+        }
+    }
+    input {
+        margin-left: 15px;
+        border-radius: 12px;
+    }
+    button {
+        .btn;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px;
+    background: @color-lightturquoise;
+    color: @color-terracotta;
+    border: 2px solid @color-mediumturquise;
+    border-radius: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    &:hover {
+        background: @color-mediumturquise;
+    }
+}
+
+nav {
+    ul,
+    li,
+    b,
+    a {
+        color: @color-terracotta;
+    }
+}
+
+section {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+        color: #b5525c;
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8ph;
+}
+
+.header1 {
+    background-color: @color-terracotta;
+    text-align: left;
+    font-size: 25px;
+}
+
+.header1,
+h2 {
+    color: @color-turquoise;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: @color-lightturquoise;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: @color-turquoise;
+    color: @color-lightturquoise;
+    height: 300px;
+}
+
+footer {
+    background-color: @color-terracotta;
+    padding: 1px;
+    text-align: center;
+    color: @color-lightturquoise;
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.border {
+    font-family: @main-font;
+    color: @color-terracotta;
+   
+    margin: 25px 50px 75px 100px;
+}
+
+.mainLink {
+    color: white;
+}
+
+h2 {
+    margin-left: 75px;
+    font-family: @main-font;
+}
+
+div {
+    background-color: whitesmoke;
+    width: 290px;
+    border: 5px solid pink;
+    padding: 23px;
+    margin-left: 1100px;
+}
+
+.imgHotel {
+    margin-left: 1100px;
+    width: 20%;
+    border: 5px solid pink;
+}
+
+.fact {
+    margin-left: 1100px;
+}
