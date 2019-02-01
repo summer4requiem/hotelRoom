@@ -1,7 +1,4 @@
-@color-turquoise: #105e62;
-@color-lightturquoise: #a2eae2;
-@color-mediumturquise: #41aaa8;
-@color-terracotta: #b5525c;
+@color-botton: #FF8C00;
 @main-font: Georgia;
 * {
     box-sizing: border-box;
@@ -11,7 +8,7 @@ body {
     font-family: Arial sans-serif;
     margin: 0;
     padding: 0;
-    background: @color-lightturquoise;
+    background:whitesmoke;
 }
 
 img {
@@ -19,7 +16,7 @@ img {
 }
 
 .header-with-background {
-    background-image: url('mountain.jpg');
+    background-image: url('holl.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,14 +25,14 @@ img {
         margin: 0;
         text-align: center;
         color: white;
-        text-shadow: 0 0 5px black;
+        text-shadow: 0 0 30px black;
         padding: 40vh 15vw 0;
     }
 }
 
 .forma-123 {
     label {
-        color: @color-turquoise;
+        color: dimgray;
         .title {
             display: block;
             margin-left: 15px;
@@ -52,26 +49,26 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 4px;
-    background: @color-lightturquoise;
-    color: @color-terracotta;
-    border: 2px solid @color-mediumturquise;
-    border-radius: 10px;
-    font-size: 12px;
+    padding: 5px;
+    background: @color-botton;
+    color: white;
+    border-radius: 1px;
+    font-size: 17px;
     text-decoration: none;
     margin-left: 15px;
     cursor: pointer;
     &:hover {
-        background: @color-mediumturquise;
+        background: dimgray;
     }
 }
+
 
 nav {
     ul,
     li,
     b,
     a {
-        color: @color-terracotta;
+        color:@color-botton;
     }
 }
 
@@ -98,21 +95,21 @@ th {
 }
 
 .header1 {
-    background-color: @color-terracotta;
+    background-color:white;
     text-align: left;
     font-size: 25px;
 }
 
 .header1,
 h2 {
-    color: @color-turquoise;
+    color:dimgray;
 }
 
 nav {
     float: left;
     width: 30%;
     height: 300px;
-    background: @color-lightturquoise;
+    background: dimgray;
     padding: 20px;
 }
 
@@ -125,16 +122,16 @@ article {
     float: right;
     padding: 20px;
     width: 70%;
-    background-color: @color-turquoise;
-    color: @color-lightturquoise;
+    background-color: gray;
+    
     height: 300px;
 }
 
 footer {
-    background-color: @color-terracotta;
+    background-color: whitesmoke;
     padding: 1px;
     text-align: center;
-    color: @color-lightturquoise;
+    color:dimgray;
 }
 
 @media (max-width: 600px) {
@@ -145,11 +142,6 @@ footer {
     }
 }
 
-.border {
-    font-family: @main-font;
-    color: @color-terracotta;
-    margin: 25px 50px 75px 100px;
-}
 
 .mainLink {
     color: white;
@@ -159,16 +151,26 @@ h2 {
     margin-left: 75px;
     font-family: @main-font;
 }
+.history_and_culture {
+    text-align: center;
+    text-decoration: underline overline;
+    font-family: fantasy;
+    
+}
 
 .imgHotel {
     margin-left: 1100px;
-    width: 20%;
-    border: 5px solid pink;
+    width: 20%;  
 }
-
 .fact {
     margin-left: 1100px;
-}
+    color: dimgray;
+    font-family: Georgia;
+    font-size: 16pt;
+    }
+   
+
+
 
 .grid-system {
     display: grid;
@@ -198,8 +200,13 @@ h2 {
     }
 }
 
+
 @media(max-width:800px) {
     .grid-system {
         grid-template-columns: 1fr;
     }
+}
+.description {
+    margin-left: 1100px;
+    color: dimgray;
 }
