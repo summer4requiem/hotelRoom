@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Arial sans-serif;
     margin: 0;
     padding: 0;
     background: whitesmoke;
@@ -14,6 +13,7 @@ body {
 img {
     max-width: 100%;
 }
+
 .blueHat {
     background-color: @darkPrimaryColor;
     position: fixed;
@@ -21,45 +21,38 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    height: 42px;
     .bluehat-container {
         display: grid;
-        grid-template-columns: 216px 452px 1fr;
-        max-width: 975px;
-        margin: 0 auto;
+        grid-template-columns: 395px 452px 1fr;
+        max-width: 974px;
         .bluehat-container-item {
             height: 45px;
-             display: block;
-            
+            display: block;
             &:first-child {
                 background-image: data-uri('../img/ic_head_logo.svg');
                 background-repeat: no-repeat;
-                background-position: 6px center;
+                background-position: 229px 11px;
                 background-size: 34px;
-                margin: -2px 10px 0 0;
-                
-                
             }
             .text-form {
                 background-color: darken(@darkPrimaryColor, 10%);
                 background-image: data-uri('../img/ic_head_loupe.svg');
                 background-repeat: no-repeat;
                 background-position: 8px 8px;
-                background-size: 15px;
+                background-size: 13px;
                 border-radius: 14px;
-
                 width: 230px;
                 height: 28px;
                 border: none;
-                margin: 7px 0 0 -46px;
-                color: white;
+                margin: 7px 0 0;
+                color: @textPrimaryColor;
                 padding-left: 27px;
                 font-size: 13px;
                 &::-webkit-input-placeholder {
                     color: lighten(@darkPrimaryColor, 15%);
                 }
                 &:focus {
-                    background: white;
+                    background: @textPrimaryColor;
                     color: @darkPrimaryColor;
                     outline: none;
                     &::-webkit-input-placeholder {
@@ -81,15 +74,15 @@ img {
     h1 {
         margin: 0;
         text-align: center;
-        color: black;
-        text-shadow: 0px 1px white;
+        color: @primaryTextColor;
+        text-shadow: 0px 1px @textPrimaryColor;
         padding: 40vh 15vw 0;
     }
 }
 
 .forma-123 {
     label {
-        color: dimgray;
+        color: @secondaryTextColor;
         .title {
             display: block;
             margin-left: 15px;
@@ -124,81 +117,67 @@ nav {
     li,
     b,
     a {
-        color: @accentColor;
+        color: @primaryTextColor;
+        text-decoration: none;
+        padding: 14px 0 0 0;
+        margin: 0 0 2px 5px;
+        font-family: @main-font;
     }
 }
 
-section {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-        color: #b5525c;
-    }
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid @textPrimaryColor;
     text-align: left;
     padding: 8ph;
 }
 
 .header1 {
-    background-color: white;
+    background-color: @textPrimaryColor;
     text-align: left;
     font-size: 25px;
+    font-family: @main-font;
 }
 
 .header1,
 h2 {
-    color: dimgray;
+    color: @secondaryTextColor;
 }
 
 nav {
+    padding: 87px 149px 206px 69px;
     float: left;
-    width: 30%;
-    height: 300px;
-    background: dimgray;
-    padding: 20px;
+    background: lighten(@secondaryTextColor, 45%);
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 17px 0 4px 0;
 }
 
 article {
     float: right;
-    padding: 20px;
+    padding: 9px 0 20px 17px;
     width: 70%;
-    background-color: gray;
-    height: 300px;
+    background-color: @textPrimaryColor;
+    color: @secondaryTextColor;
+    height: 158px;
 }
 
-footer {
-    background-color: whitesmoke;
-    padding: 1px;
+.footer-container {
+    background-color: @lightPrimaryColor;
+    padding: 23px;
     text-align: center;
-    color: dimgray;
+    color: @primaryTextColor;
+    background-image: data-uri('../img/mail.png');
+    background-repeat: no-repeat;
+    background-size: 46px;
+    background-position: 841px 0;
 }
 
-@media (max-width: 600px) {
-    nav,
-    article {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.mainLink {
-    color: white;
+.footerImgItem {
+  
 }
 
 h2 {
@@ -219,7 +198,7 @@ h2 {
 
 .fact {
     text-align: right;
-    color: dimgray;
+    color: @secondaryTextColor;
     font-family: Georgia;
     font-size: 16pt;
     display: block;
@@ -233,7 +212,7 @@ h2 {
 .fact2 {
     text-align: right;
     font-size: 100%;
-    color: dimgray;
+    color: @secondaryTextColor;
     font-family: @main-font;
 }
 
@@ -244,13 +223,13 @@ h2 {
     gap: 10px;
     width: 100%;
     .item {
-        background: #050;
+        background: @darkPrimaryColor;
         padding: 16px;
         &:first-child {
-            background: #500;
+            background: @primaryColor;
         }
         &:last-child {
-            background: #005;
+            background: @primaryTextColor;
         }
         img {
             display: block;
@@ -259,7 +238,7 @@ h2 {
         }
         p {
             color: white;
-            text-shadow: 0 0 5px black;
+            text-shadow: 0 0 5px @primaryTextColor;
             text-transform: uppercase;
         }
     }
@@ -273,5 +252,5 @@ h2 {
 
 .description {
     margin-left: 1100px;
-    color: dimgray;
+    color: @secondaryTextColor;
 }
