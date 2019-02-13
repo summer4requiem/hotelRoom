@@ -2,6 +2,9 @@
 @main-font: Georgia;
 * {
     box-sizing: border-box;
+    * { 
+        box-shadow: 0 0 0 1px lawngreen; 
+        }
 }
 
 body {
@@ -23,22 +26,23 @@ img {
     left: 0;
     .bluehat-container {
         display: grid;
-        grid-template-columns: 395px 452px 1fr;
+        grid-template-columns: 173px 452px 1fr;
         max-width: 974px;
+        margin: 0 auto;
         .bluehat-container-item {
             height: 45px;
             display: block;
             &:first-child {
                 background-image: data-uri('../img/ic_head_logo.svg');
                 background-repeat: no-repeat;
-                background-position: 229px 11px;
+                background-position: 8px 11px;
                 background-size: 34px;
             }
             .text-form {
                 background-color: darken(@darkPrimaryColor, 10%);
                 background-image: data-uri('../img/ic_head_loupe.svg');
                 background-repeat: no-repeat;
-                background-position: 8px 8px;
+                background-position: 9px 10px;
                 background-size: 13px;
                 border-radius: 14px;
                 width: 230px;
@@ -46,7 +50,7 @@ img {
                 border: none;
                 margin: 7px 0 0;
                 color: @textPrimaryColor;
-                padding-left: 27px;
+                padding-left: 29px;
                 font-size: 13px;
                 &::-webkit-input-placeholder {
                     color: lighten(@darkPrimaryColor, 15%);
@@ -125,7 +129,6 @@ nav {
     }
 }
 
-
 td,
 th {
     border: 1px solid @textPrimaryColor;
@@ -176,9 +179,7 @@ article {
     background-position: 841px 0;
 }
 
-.footerImgItem {
-  
-}
+.footerImgItem {}
 
 h2 {
     margin-left: 75px;
@@ -191,29 +192,34 @@ h2 {
     font-family: fantasy;
 }
 
-.imgHotel {
-    margin-left: 1100px;
-    width: 20%;
-}
-
-.fact {
-    text-align: right;
-    color: @secondaryTextColor;
-    font-family: Georgia;
-    font-size: 16pt;
-    display: block;
-    img {
-        float: right;
-        width: 350px;
-        height: 300px;
+.block-description {
+   
+    display: grid;
+    grid-template-rows: 20px 250px 72px;
+    max-width: 474px;
+    margin-left: 1000px;
+    .fact {
+        
+        font-family: fantasy;
+        text-align: center;
+        font-size: 15px;
+        padding: 0px;
     }
-}
-
-.fact2 {
-    text-align: right;
-    font-size: 100%;
-    color: @secondaryTextColor;
-    font-family: @main-font;
+    .fact-img {
+        padding: 12px;
+        background-image: data-uri('../img/facts.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    img {
+        display: block;
+        width: 250px;
+        height: 200px;
+    }
+    .fact-description {
+        
+        padding: 0 0 5px 22px;
+    }
 }
 
 .grid-system {
@@ -248,9 +254,4 @@ h2 {
     .grid-system {
         grid-template-columns: 1fr;
     }
-}
-
-.description {
-    margin-left: 1100px;
-    color: @secondaryTextColor;
 }
