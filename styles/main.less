@@ -2,9 +2,9 @@
 @main-font: Georgia;
 * {
     box-sizing: border-box;
-    * { 
-        box-shadow: 0 0 0 1px lawngreen; 
-        }
+    * {
+        box-shadow: 0 0 0 1px lawngreen;
+    }
 }
 
 body {
@@ -168,22 +168,17 @@ article {
     height: 158px;
 }
 
-.footer-container {
-    background-color: @lightPrimaryColor;
-    padding: 23px;
-    text-align: center;
-    color: @primaryTextColor;
-    background-image: data-uri('../img/mail.png');
-    background-repeat: no-repeat;
-    background-size: 46px;
-    background-position: 841px 0;
-}
-
-.footerImgItem {}
-
 h2 {
     margin-left: 75px;
     font-family: @main-font;
+}
+
+h3 {
+    color: @accentColor;
+}
+
+.rooms {
+    color: @primaryColor;
 }
 
 .history_and_culture {
@@ -193,14 +188,11 @@ h2 {
 }
 
 .block-description {
-   
     display: grid;
     grid-template-rows: 20px 250px 72px;
     max-width: 474px;
     margin-left: 1000px;
     .fact {
-        
-        font-family: fantasy;
         text-align: center;
         font-size: 15px;
         padding: 0px;
@@ -211,14 +203,10 @@ h2 {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    img {
-        display: block;
-        width: 250px;
-        height: 200px;
-    }
     .fact-description {
-        
-        padding: 0 0 5px 22px;
+        text-align: center;
+        font-size: 16px;
+        padding: 0px;
     }
 }
 
@@ -253,5 +241,37 @@ h2 {
 @media(max-width:800px) {
     .grid-system {
         grid-template-columns: 1fr;
+    }
+}
+
+.just-footer {
+    background-color: fade(@darkPrimaryColor, 65%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-container-item {
+    display: inline-flex;
+    font-family: Helvetica, Calibri, Arial, sans-serif;
+    align-items: baseline;
+    .footer-container-item2 {
+        margin: 10px 8px 6px 39px;
+        padding: 5px;
+        color: black;
+    }
+  
+
+    .footer-container-item4 {
+        padding: 6px 34px 3px;
+        margin: 0 0 0 44px;
+        text-decoration: none;
+        background-color: fade(@darkPrimaryColor, 65%);
+        color: black;
+        font-size: 15px;
+        &:hover {
+            background: fade(@darkPrimaryColor, 85%);
+        }
     }
 }
