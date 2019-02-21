@@ -137,7 +137,7 @@ th {
 }
 
 .header1 {
-    background-color: @textPrimaryColor;
+    background-color: @darkPrimaryColor;
     text-align: left;
     font-size: 25px;
     font-family: @main-font;
@@ -165,12 +165,13 @@ article {
     width: 70%;
     background-color: @textPrimaryColor;
     color: @secondaryTextColor;
-    height: 158px;
+    height: 140px;
 }
 
 h2 {
     margin-left: 75px;
     font-family: @main-font;
+    font-size: 35px;
 }
 
 h3 {
@@ -178,7 +179,7 @@ h3 {
 }
 
 .rooms {
-    color: @primaryColor;
+    color: @textPrimaryColor;
 }
 
 .history_and_culture {
@@ -212,16 +213,15 @@ h3 {
 
 .grid-system {
     display: grid;
-    grid-template-columns: 4fr 6fr 4fr;
+    grid-template-columns: 3fr 4fr 4fr;
     padding: 10px;
-    gap: 10px;
+    gap: 37px;
     width: 100%;
     .item {
         background: @darkPrimaryColor;
         padding: 16px;
         &:first-child {
             background: @primaryColor;
-            
         }
         &:last-child {
             background: @primaryTextColor;
@@ -229,12 +229,103 @@ h3 {
         img {
             display: block;
             width: 100%;
-            height: 150px;
+            height: 250px;
         }
         p {
             color: white;
             text-shadow: 0 0 5px @primaryTextColor;
             text-transform: uppercase;
+            padding: 28px;
+        }
+    }
+    .item1 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 14px 0px 14px;
+            width: 108%;
+            height: 286px;
+        }
+        p {
+            padding: 17px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
+        }
+    }
+    .item2 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 27px 0px 29px;
+            width: 108%;
+            height: 293px;
+        }
+        p {
+            padding: 44px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
+        }
+    }
+    .item3 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 27px 0px 29px;
+            width: 108%;
+            height: 293px;
+        }
+        p {
+            padding: 17px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
+        }
+    }
+    .item4 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 27px 7px 29px;
+            width: 108%;
+            height: 293px;
+        }
+        p {
+            padding: 17px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
+        }
+    }
+    .item5 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 27px 0px 29px;
+            width: 108%;
+            height: 293px;
+        }
+        p {
+            padding: 44px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
+        }
+    }
+    .item6 {
+        background: @darkPrimaryColor;
+        img {
+            padding: 29px 14px 0px 14px;
+            width: 108%;
+            height: 297px;
+        }
+        p {
+            padding: 17px 12px 10px 23px;
+            color: @textPrimaryColor;
+            font-family: fantasy;
+            text-transform: uppercase;
+            text-shadow: 0 0 2px @primaryTextColor;
         }
     }
 }
@@ -246,33 +337,35 @@ h3 {
 }
 
 .just-footer {
-    background-color: fade(@darkPrimaryColor, 65%);
     position: fixed;
     left: 0;
-    bottom: 0;
     right: 0;
-}
-
-.footer-container-item {
-    display: inline-flex;
+    bottom: 0;
+    display: flex;
     font-family: Helvetica, Calibri, Arial, sans-serif;
     align-items: baseline;
+    background-color: fade(@lightPrimaryColor, 65%);
     .footer-container-item2 {
-        margin: 10px 8px 6px 39px;
-        padding: 5px;
+        padding: 16px;
         color: black;
     }
-  
-
     .footer-container-item4 {
         padding: 6px 34px 3px;
         margin: 0 0 0 44px;
         text-decoration: none;
-        background-color: fade(@darkPrimaryColor, 65%);
+        background-color: fade(@lightPrimaryColor, 65%);
         color: black;
         font-size: 15px;
         &:hover {
-            background: fade(@darkPrimaryColor, 85%);
+            background: fade(@lightPrimaryColor, 85%);
         }
     }
+}
+
+.comment-main {
+    width: 300px;
+}
+
+.comment {
+    text-align: center;
 }

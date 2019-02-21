@@ -133,7 +133,7 @@ th {
   padding: 8ph;
 }
 .header1 {
-  background-color: #FFFFFF;
+  background-color: #00796B;
   text-align: left;
   font-size: 25px;
   font-family: Georgia;
@@ -157,17 +157,18 @@ article {
   width: 70%;
   background-color: #FFFFFF;
   color: #757575;
-  height: 158px;
+  height: 140px;
 }
 h2 {
   margin-left: 75px;
   font-family: Georgia;
+  font-size: 35px;
 }
 h3 {
   color: #FF5722;
 }
 .rooms {
-  color: #009688;
+  color: #FFFFFF;
 }
 .history_and_culture {
   text-align: center;
@@ -198,9 +199,9 @@ h3 {
 }
 .grid-system {
   display: grid;
-  grid-template-columns: 4fr 6fr 4fr;
+  grid-template-columns: 3fr 4fr 4fr;
   padding: 10px;
-  gap: 10px;
+  gap: 37px;
   width: 100%;
 }
 .grid-system .item {
@@ -216,12 +217,103 @@ h3 {
 .grid-system .item img {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 250px;
 }
 .grid-system .item p {
   color: white;
   text-shadow: 0 0 5px #212121;
   text-transform: uppercase;
+  padding: 28px;
+}
+.grid-system .item1 {
+  background: #00796B;
+}
+.grid-system .item1 img {
+  padding: 29px 14px 0px 14px;
+  width: 108%;
+  height: 286px;
+}
+.grid-system .item1 p {
+  padding: 17px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
+}
+.grid-system .item2 {
+  background: #00796B;
+}
+.grid-system .item2 img {
+  padding: 29px 27px 0px 29px;
+  width: 108%;
+  height: 293px;
+}
+.grid-system .item2 p {
+  padding: 44px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
+}
+.grid-system .item3 {
+  background: #00796B;
+}
+.grid-system .item3 img {
+  padding: 29px 27px 0px 29px;
+  width: 108%;
+  height: 293px;
+}
+.grid-system .item3 p {
+  padding: 17px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
+}
+.grid-system .item4 {
+  background: #00796B;
+}
+.grid-system .item4 img {
+  padding: 29px 27px 7px 29px;
+  width: 108%;
+  height: 293px;
+}
+.grid-system .item4 p {
+  padding: 17px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
+}
+.grid-system .item5 {
+  background: #00796B;
+}
+.grid-system .item5 img {
+  padding: 29px 27px 0px 29px;
+  width: 108%;
+  height: 293px;
+}
+.grid-system .item5 p {
+  padding: 44px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
+}
+.grid-system .item6 {
+  background: #00796B;
+}
+.grid-system .item6 img {
+  padding: 29px 14px 0px 14px;
+  width: 108%;
+  height: 297px;
+}
+.grid-system .item6 p {
+  padding: 17px 12px 10px 23px;
+  color: #FFFFFF;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #212121;
 }
 @media (max-width: 800px) {
   .grid-system {
@@ -229,30 +321,33 @@ h3 {
   }
 }
 .just-footer {
-  background-color: rgba(0, 121, 107, 0.65);
   position: fixed;
   left: 0;
-  bottom: 0;
   right: 0;
-}
-.footer-container-item {
-  display: inline-flex;
+  bottom: 0;
+  display: flex;
   font-family: Helvetica, Calibri, Arial, sans-serif;
   align-items: baseline;
+  background-color: rgba(178, 223, 219, 0.65);
 }
-.footer-container-item .footer-container-item2 {
-  margin: 10px 8px 6px 39px;
-  padding: 5px;
+.just-footer .footer-container-item2 {
+  padding: 16px;
   color: black;
 }
-.footer-container-item .footer-container-item4 {
+.just-footer .footer-container-item4 {
   padding: 6px 34px 3px;
   margin: 0 0 0 44px;
   text-decoration: none;
-  background-color: rgba(0, 121, 107, 0.65);
+  background-color: rgba(178, 223, 219, 0.65);
   color: black;
   font-size: 15px;
 }
-.footer-container-item .footer-container-item4:hover {
-  background: rgba(0, 121, 107, 0.85);
+.just-footer .footer-container-item4:hover {
+  background: rgba(178, 223, 219, 0.85);
+}
+.comment-main {
+  width: 300px;
+}
+.comment {
+  text-align: center;
 }
