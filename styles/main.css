@@ -175,27 +175,34 @@ h3 {
   text-decoration: underline overline;
   font-family: fantasy;
 }
-.block-description {
+.wrap {
+  height: 356px;
+}
+.wrap .block-description {
   display: grid;
   grid-template-rows: 20px 250px 72px;
   max-width: 474px;
-  margin-left: 1000px;
+  float: right;
 }
-.block-description .fact {
+.wrap .fact {
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   padding: 0px;
+  font-family: Georgia;
+  color: #757575;
 }
-.block-description .fact-img {
+.wrap .fact-img {
   padding: 12px;
   background-image: url('../img/facts.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  border-radius: 10px;
 }
-.block-description .fact-description {
+.wrap .fact-description {
+  font-family: inherit;
+  color: #757575;
   text-align: center;
-  font-size: 16px;
-  padding: 0px;
+  font-family: Georgia;
 }
 .grid-system {
   display: grid;

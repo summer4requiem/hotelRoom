@@ -188,26 +188,33 @@ h3 {
     font-family: fantasy;
 }
 
-.block-description {
-    display: grid;
-    grid-template-rows: 20px 250px 72px;
-    max-width: 474px;
-    margin-left: 1000px;
+.wrap {
+    height: 356px;
+    .block-description {
+        display: grid;
+        grid-template-rows: 20px 250px 72px;
+        max-width: 474px;
+        float: right;
+    }
     .fact {
         text-align: center;
-        font-size: 15px;
+        font-size: 17px;
         padding: 0px;
+        font-family: @main-font;
+        color: @secondaryTextColor;
     }
     .fact-img {
         padding: 12px;
         background-image: data-uri('../img/facts.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
+        border-radius: 10px;
     }
     .fact-description {
+        font-family: inherit;
+        color: @secondaryTextColor;
         text-align: center;
-        font-size: 16px;
-        padding: 0px;
+        font-family: @main-font;
     }
 }
 
